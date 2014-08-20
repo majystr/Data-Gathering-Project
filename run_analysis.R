@@ -44,6 +44,13 @@ extract_data <- function(df) {
     require("reshape2")
     m_xdf <- melt(xdf)
     c_xdf <- dcast(m_xdf, Subject + Activity~...,mean)
+    c_xdf[,2] <- as.numeric(c_xdf[,2])
+    c_xdf$Activity[c_xdf$Activity==1] <- "WALKING"
+    c_xdf$Activity[c_xdf$Activity==2] <- "WALKING_UPSTAIRS"
+    c_xdf$Activity[c_xdf$Activity==3] <- "WALKING_DOWNSTAIRS"
+    c_xdf$Activity[c_xdf$Activity==4] <- "SITTING"
+    c_xdf$Activity[c_xdf$Activity==5] <- "STANDING"
+    c_xdf$Activity[c_xdf$Activity==6] <- "LAYING"
     return(c_xdf)
 }
 
