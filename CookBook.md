@@ -3,7 +3,7 @@ title: "CookBook.md"
 output: html_document
 ---
 
-***Code Book of the tidy data set of UC Irvine's Human Activity Recognition Using Smartphones Data Collection.
+####Code Book of the tidy data set of UC Irvine's Human Activity Recognition Using Smartphones Data Collection.
 This code book describes the variables and observation labels for Coursera's Data Gathering and Cleaning course project.
 
 **Subject** is a numeric factor between 1 and 30.  **Activty** is a factor of six different activities.  There are 88 mean and standard deviation measurements that have been averaged per subject per activity.  Each subject thus has six activity rows covering 88 mean measurement columns.
@@ -14,7 +14,7 @@ The measuement means are averages per subject per activity, and represent the fo
 
 Full information about the data set can be found [here](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
 
-****Activity Label Factors
+####Activity Label Factors:
 * WALKING
 * WALKING_UPSTAIRS
 * WALKING_DOWNSTAIRS
@@ -22,7 +22,7 @@ Full information about the data set can be found [here](http://archive.ics.uci.e
 * STANDING
 * LAYING
 
-****Measurement Variable Means:
+####Measurement Variable Means:
 * tBodyAcc.mean...X
 * tBodyAcc.mean...Y
 * tBodyAcc.mean...Z
