@@ -9,6 +9,8 @@ get_data <- function () {
     }
     if (file.exists("./getdata-projectfiles-UCI HAR Dataset.zip")) {
         unzip("./getdata-projectfiles-UCI HAR Dataset.zip",overwrite = TRUE,exdir = "./data")
+    } else if (file.exists("./data/UCI HAR Dataset")) {
+        print("Assuming Nothing to Do!")
     } else {
         dest_file_name <- "./data/Dataset.zip"
         if (!file.exists(dest_file_name)) {
