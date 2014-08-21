@@ -28,7 +28,7 @@ The functions of run_analysis() are:
 - get_data: makes the working directory, *data*, and unzips the downloaded data set into it.
 - merge_data: merges the training and test data into one data frame, preserving coorspondence between subject, activities and measurements.
 - extract_data: pulls the measurements with "mean" & "std" in their descriptors into a new data frame and then properly labels each variable and observation.
-export_data: Using **write.table**, output the tidy data set into a text file named *tidy_dataset.txt*.
+- export_data: Using **write.table**, output the tidy data set into a text file named *tidy_dataset.txt*.
 
 The script performs the following:
 * Training/Test measurements are read into different dataframes.  Subject and activity factors are combined using cbind.
