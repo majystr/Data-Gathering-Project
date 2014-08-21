@@ -4,7 +4,7 @@ output: word_document
 ---
 
 ##Overview of Script
-**run_analysis.R** is a script produced for Coursera's Data Gathering and Cleaning class, August, 2004.  It's purpose is to demonstrate some techniques of data tidying, by downloading, merging and creating a "clean" data set of the mean and standard deviation of measurements of UC Irvine's Human Activity Recognition Using Smartphones Data Set.
+**run_analysis.R** is a script produced for Coursera's Data Gathering and Cleaning class, August, 2014.  It's purpose is to demonstrate some techniques of data tidying, by downloading, merging and creating a "clean" data set of the mean and standard deviation of measurements of UC Irvine's Human Activity Recognition Using Smartphones Data Set.
 
 Full information about the data set can be found [here](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
 
@@ -25,7 +25,7 @@ To run the actual script, source **run_analysis.R** and type *>run_analysis()* a
 
 ##Operation of the Script
 The functions of run_analysis() are:
-- get_data(): makes the working directory, *data*, and unzips the downloaded data set into it.
+- get_data: makes the working directory, *data*, and unzips the downloaded data set into it.
 - merge_data: merges the training and test data into one data frame, preserving coorspondence between subject, activities and measurements.
 - extract_data: pulls the measurements with "mean" & "std" in their descriptors into a new data frame and then properly labels each variable and observation.
 export_data: Using **write.table**, output the tidy data set into a text file named *tidy_dataset.txt*.
