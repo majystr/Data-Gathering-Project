@@ -18,7 +18,7 @@ The script runs five functions based on the basic steps of the assignment:
 
 **How to Run the Script
 After changing the working directory to be where run_analysis.R is located, run the tidy operations by either:
-* Downloading the data file, called getdata-projectfiles-UCI HAR Dataset.zip, leaving it zipped, into the same directory as run_analysis.R is being run.
+* Downloading the data file, called getdata-projectfiles-UCI HAR Dataset.zip, leaving it zipped, into the same directory as run_analysis.R is being run. 
 * Allowing the script to download and unzip a fresh copy of the data.
 
 To run the actual script, source **run_analysis.R** and type *>run_analysis()* at the console prompt. An internet connection is required to download the data set.
